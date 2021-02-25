@@ -4,10 +4,10 @@ orbs:
 jobs:
   build:
     newman-collection-run-env-timeout:
-      executor: newman/postman-newman-docker
-      steps:
-        - checkout
-        - newman/newman-run:
-            collection: ./collection/test_reg.postman_collection.json
-            environment: ./env/New-lamp-staging.postman_environment.json
+    executor: newman/postman-newman-docker
+    steps:
+      - checkout
+      - newman/newman-run:
+          collection: ./collection/test_reg.postman_collection.json
+          environment: ./env/New-lamp-staging.postman_environment.json
 
