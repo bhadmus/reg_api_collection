@@ -10,3 +10,4 @@ jobs:
         - newman/newman-run:
             collection: ./collection/test_reg.postman_collection.json
             environment: ./env/New-lamp-staging.postman_environment.json
+            timeout: '10000'
