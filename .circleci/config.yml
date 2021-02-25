@@ -3,7 +3,7 @@ orbs:
   newman: postman/newman@1.0.0
 jobs:
   build:
-    newman-collection-run-env-docker:
+    newman-collection-run:
       executor: newman/postman-newman-docker
       steps:
         - checkout
