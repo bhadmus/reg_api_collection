@@ -5,6 +5,8 @@ jobs:
   build:
     newman-collection-run-env-timeout:
     executor: newman/postman-newman-docker
+    newman-collection-run-env-working_directory:
+
     steps:
       - checkout
       - newman/newman-run:
